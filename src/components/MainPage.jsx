@@ -5,7 +5,7 @@ import { myContext } from "..";
 import toast from "react-hot-toast";
 import { gsap } from "gsap";
 
-const backend = "http://localhost:4000";
+const backend = process.env.BACKEND;
 const MainPage = () => {
   const navigate = useNavigate();
   // const [data, setData] = useState(["empty:"]); // State to store fetched data
